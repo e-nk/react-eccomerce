@@ -2,8 +2,9 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 import Home from "../pages/Home";
-import Products from "../pages/Products";
+import Products from "../components/Product/Products";
 import Wishlist from "../pages/Wishlist";
+import Cart from "../pages/Cart";
 
 
 function Navbar(){
@@ -39,6 +40,8 @@ function Navbar(){
         <Route path="/" element={<Home />} />
               <Route path="/Products" element={<Products />} />
               <Route path="/Wishlist" element={<Wishlist />} />
+              <Route path="/Cart" element={<Cart />} />
+              
               
               
   
